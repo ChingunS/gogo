@@ -10,8 +10,11 @@
     width: 119px;
     height: 38.91px;
     flex-shrink: 0;
-    background:lightgray 0px 0px / 100% 100% no-repeat;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo-top-header {
+    display: flex;
+    justify-content: flex-start;
 }
 
 ul {
@@ -43,7 +46,8 @@ li a:hover {
 }
 
 .left {
-    float: left;
+    width: 744.55px;
+    height: 38.91px;
 }
 
 .top-section {
@@ -59,4 +63,17 @@ li a:hover {
     padding: 16.95px 40px 20px 40px;
     flex-direction: column;
     align-items: flex-start;
+}
+
+nav {
+    display: flex;
+    padding-bottom: 0px;
+    align-items: flex-end;
+    gap: 95.76px;
+}
+
+.navbar {
+    display: inline-flex;
+    padding-left: 0px;
+    align-items: center;
 }
