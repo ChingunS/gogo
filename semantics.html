@@ -8,151 +8,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="gogoapp">
-        <div class="gogoapp-header">
-            <section class="navbar-section">
-                <div>
-                    <div class="uk-container">
-                        <div class="navbar margin-top-30 uk-visible@m">
-                            <nav uk-navbar class="uk-navbar-container margin-bottom-20 uk-navbar">
-                                <div class="uk-navbar-left uk-position-relative">
-                                    <a class="logo-top-header" href="https://gogo.mn/">
-                                        <img class="logo" src="semantics-pics/gogo-logo.345096b3.png" width="119" alt="gogo logo">
-                                    </a>
-                                    <ul class="uk-navbar-nav margin-left-20 main-menu-container">
-                                        <li class="uk-inline">
-                                            <a class="main-menu-link-item" aria-expanded="false" href="https://gogo.mn/">
-                                                &nbsp;Мэдээ&nbsp;
-                                                <i class="fa fa-chevron-down text-12"></i> 
-                                            </a> 
-                                        </li>
-                                        <li class="uk-inline">
-                                            <a class="main-menu-link-item" aria-expanded="false" href="https://gogo.mn/">
-                                                &nbsp;GoGo булан&nbsp;
-                                                <i class="fa fa-chevron-down text-12"></i>
-                                            </a>
-                                        </li>
-                                        <li class="uk-inline">
-                                            <a class="main-menu-link-item main-menu-active" aria-expanded="false" href="https://gogo.mn/">
-                                                &nbsp;Үзэх&nbsp;<i class="fa fa-chevron-down text-12"></i>
-                                            </a>
-                                        </li>
-                                        <li class="uk-inline">
-                                            <a class="main-menu-link-item" aria-expanded="false" href="https://gogo.mn/">
-                                                &nbsp;Хэв маяг&nbsp;
-                                                <i class="fa fa-chevron-down text-12"></i>
-                                            </a>
-                                        </li>
-                                        <li class="uk-inline">
-                                            <a class="main-menu-link-item" href="https://gogo.mn/" target="_blank">
-                                                &nbsp;English&nbsp;
-                                            </a>
-                                        </li> 
-                                    </ul>
-                                    <div class="navbar-search-btn uk-animation-fade uk-animation-fast"></div>
-                                    <div class="uk-navbar-item search-btn-container">
-                                        <a class="navbar-search-link">
-                                            <span uk-icon="icon: search" class="text-16 uk-icon">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search-navbar">
-                                                    <circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7">
-                                                    </circle>
-                                                    <path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="uk-navbar-right">
-                                    <ul class="uk-navbar-nav extra-link-container">
-                                        <li class="margin-right-30">
-                                            <a href="/weather/" uk-tooltip="Улаанбаатар хот" class="uk-display-block uk-padding-remove uk-text-light home-extra-link extra-weather" title="" aria-expanded="false">
-                                                <div uk-flex="">
-                                                    <div class="uk-text-right"><div class="text-12">Цаг агаар</div> 
-                                                    <div class="uk-flex uk-flex-middle text-18" style="margin-top: -5px;">
-                                                        <div class="margin-right-5">
-                                                            <img src="https://mgl.gogo.mn/newsn/v4/images/icon-cloud.e255a8cd.svg" width="20" alt="">
-                                                        </div> 
-                                                        <div class="margin-top-5 text-medium">&nbsp;9</div>
-                                                    </div>
-                                            </div></div></a>
-                                        </li>
-                                        <li class="margin-right-30">
-                                            <a href="/horoscope" class="uk-display-block uk-padding-remove uk-text-light home-extra-link extra-horoscope">
-                                                <div class="uk-text-right">
-                                                    <div class="text-12">Зурхай</div> 
-                                                    <div class="uk-flex uk-flex-middle text-18" style="margin-top: -5px;">
-                                                        <div class="margin-right-5">
-                                                            <img src="https://mgl.gogo.mn/newsn/v4/images/calendar-icon.ff84145b.svg" width="17" alt="">
-                                                        </div> 
-                                                        <div class="margin-top-5 text-medium">&nbsp;9.27</div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/exchange" class="uk-display-block uk-padding-remove uk-text-light home-extra-link extra-currency">
-                                                <div class="uk-text-right">
-                                                    <div class="text-12">Валютын ханш</div> 
-                                                    <div class="text-18 text-medium" style="margin-top: 0px;">
-                                                        <span class="text-green">$</span> 
-                                                        <span style="opacity: 0.1;">|</span>
-                                                        3462₮
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="gogoapp-main">
-            <section>
-                <div class="column-start">
-                    <div class="uk-flex small-banner-container">
-                        <Iframe class="uk-flex for-small-banner">
-                            <div class="uk-flex banner">
-                                <div id="banner">
-                                    <img src="semantics-pics/" alt="">
-                                </div>
-                            </div>
-                        </Iframe>
-                    </div>
-                </div>
-                <div class="uk-flex highlight-news">
-                    <ul style="display: flex; align-items: flex-start;">
-                        <li class="column-start">
-                            <div class="uk-flex home-main-highlight-container">
-                                <div class="flex-middle">
-                                    <div class="first-column">
-                                        <div class="padding-left">
-                                            <a class="red-gradient" href="">
-                                                <span style="color: white; font-size: 12px; font-weight: 700;">Мэддэг мэдээлдэг байя</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
-        <div class="gogoapp-footer">
+    <section>
+        <div class="uk-container">
+            <nav>
+                <div class="uk-navbar-left position-relative">
+                    <a class="logo" href="">
+                        <img src="semantics-pics/gogo-logo.345096b3.png" width="119px" alt="">
+                    </a>
+                    <div class="margin-left-20">
+                        <ul class="navbar-list">
+                            <li>
+                                <a class="uk-link navbar-text" href="">
+                                     Мэдээ  
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="uk-link navbar-text" href="">
+                                     GoGo булан  
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="uk-link navbar-text" href="">
+                                     Үзэх  
+                                    <i class="fa fa-chevron-down"></i>
 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="uk-link navbar-text" href="">
+                                     Хэв маяг  
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="uk-link navbar-text" href="">
+                                    English
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+
+                    </div>
+                <div></div>
+                </div>
+            </nav>
         </div>
-    </div>
+    </section>
+    <div class="gogo-main-app"></div>
+    <footer></footer>
 </body>
 </html>
