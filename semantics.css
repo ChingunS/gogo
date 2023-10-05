@@ -38,7 +38,10 @@ ul {
 
 a {
     text-decoration: none;
-    color: #000;
+    cursor: pointer;
+    color: #00adee;
+    background-color: unset;
+    transition: all .2s ease-in-out;
 }
 
 li {
@@ -306,7 +309,6 @@ div {
 
 .width {
     box-sizing: border-box;
-
     max-width: 100%;
     display: inline-block;
     padding-left: 15px;
@@ -495,13 +497,29 @@ div {
 }
 
 .width-1-6 {
-    width: 16.66389%;
+    display: flex;
+    max-width: 713px;
+    padding: 0px 0px 3px 15px;
+ 
+    align-items: flex-start;
 }
 
 
-.home-calendar-container.active, .home-calendar-container.active .home-calendar-text {
+.home-calendar-container.active, .home-calendar-container.active .home-calendar-text  {
     color: #407ce8;
 }   
+
+.home-calendar-container.active .calendar-one-day, .home-calendar-container:hover .calendar-one-day {
+    background-color: #407ce8;
+    transform: translateY(-2px);
+    transition: all .4s ease-in-out;
+}
+
+.home-calendar-container.active .home-calendar-text, .home-calendar-container:hover .home-calendar-text{
+    color: #407ce8;
+    transform: translateY(-2px);
+    transition: all .4s ease-in-out;
+}
 
 .home-calendar-container {
     display: block;
@@ -509,6 +527,7 @@ div {
 }
 .calendar-one-day {
     height: 7px;
+    width: 103.81px;
     background-color: #efefef;
     border-radius: 20px;
     transition: all .4s ease-in-out;
@@ -517,4 +536,144 @@ div {
     color: #b7b6b6;
     font-size: 13px;
     text-align: center;
+}
+
+.home-news-left {
+    float: left;
+    transform: translateZ(0);
+    margin-bottom: 0;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    vertical-align: middle;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    width: 210px;
+}
+
+.home-news-item-image {
+    height: 150px;
+    width: 210px;
+    object-fit: cover;
+    opacity: 1;
+    transform: scale(1);
+    transition: .3s ease-out;
+    transition-property: all;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: 100%;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;     
+}
+
+.home-news-right {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 1px;
+    width: 480px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.home-news-title {
+    line-height: 26px!important;
+    font-size: 19px!important;
+    margin: 0!important;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    text-transform: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.home-news-desc {
+    height: 46px;
+    overflow: hidden;
+    color: #888;
+    margin: 10px 20px 15px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 15px;
+}
+
+.row::after {
+    width: 720px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.home-right {
+    padding-left: 120px!important;
+    width: auto;
+    box-sizing: border-box;
+    max-width: 100%;
+    position: relative;
+    display: block;
+}
+
+.home-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #e5e5e5;
+    border-left: 1px solid rgba(0,0,0,.04)!important;
+    left: 70px!important;
+}
+
+.sidebar-container {
+    max-width: 290px;
+    margin-top: 10px;
+    display: block;
+}
+
+.sidebar-title {
+    font-size: 20px!important;
+    line-height: 26px!important;
+    color: #000;    
+    margin-bottom: 50px;
+    font-weight: 700;
+    display: block;
+}
+
+article {
+    display: block;
+}
+
+.sidebar-news-item {
+    transform: translateZ(0);
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    vertical-align: middle;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.sidebar-highlight-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    margin-top: 10px;
+    display: block;
 }
